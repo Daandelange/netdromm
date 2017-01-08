@@ -3,6 +3,7 @@
 var Promise = global.Promise || require('promise');
 var uuid = require('uuid');
 var WebSocketServer = require('ws').Server;
+require('./channel.js');
 
 function wsCtrl ( httpListener, logger ) {
     var instance = {};
